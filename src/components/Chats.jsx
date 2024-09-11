@@ -26,9 +26,10 @@ const Chats = () => {
     currentUser.uid && getChats();
   },[currentUser]);
   
-  const handleSelect = (u) => {
+  const handleSelect =async (u) => {
     navigate("/chat");
     dispatch({type:"CHAGE_USER", payload:u})
+
   }
   return (
     <div className="chats">
@@ -37,7 +38,8 @@ const Chats = () => {
           <img src={chat[1].userInfo.photoURL} alt="" />
           <div className="userChatInfo">
             <span>{chat[1].userInfo.displayName}</span>
-            <p>{chat[1].lastMessege?.text}</p>
+            {chat[1].lastMessege?.id ===currentUser.uid && <p>You: {chat[1].lastMessege?.text}</p>}
+            {chat[1].lastMessege?.id !==currentUser.uid && <p>{chat[1].lastMessege?.text}</p>}
           </div>
         </div>
       ))}

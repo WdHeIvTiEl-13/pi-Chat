@@ -1,7 +1,7 @@
 import Resister from "./pages/Resister";
 import Login from "./pages/Login";
 import './style.scss';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/Auth";
 import Sidebar from "./pages/Sidebar";
@@ -20,7 +20,7 @@ function App () {
   }
   
   return (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/">
         <Route index element={<ProtectedRoute>
@@ -31,7 +31,7 @@ function App () {
         <Route path="chat" element={<Chat />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   )
 }
 
