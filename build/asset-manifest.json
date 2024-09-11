@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pi-chat/static/css/main.3bd01328.css",
+    "main.js": "/pi-chat/static/js/main.3c17ee03.js",
+    "static/media/addAvater.png": "/pi-chat/static/media/addAvater.23cf93a662f752763ed1.png",
+    "index.html": "/pi-chat/index.html",
+    "main.3bd01328.css.map": "/pi-chat/static/css/main.3bd01328.css.map",
+    "main.3c17ee03.js.map": "/pi-chat/static/js/main.3c17ee03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bd01328.css",
+    "static/js/main.3c17ee03.js"
+  ]
+}
